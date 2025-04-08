@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Чат-бот</title>
+    <title>Chat Bot</title>
     <script>
         async function sendMessage() {
             let message = document.getElementById("userMessage").value;
@@ -15,15 +15,15 @@
                 body: JSON.stringify({ message: message })
             });
             let data = await response.json();
-            document.getElementById("botResponse").innerText = "Чат-бот: " + data.response;
+            document.getElementById("botResponse").innerText = "Chatbot: " + data.response;
         }
     </script>
 </head>
 <body>
-    <h1>Чат-бот</h1>
+    <h1>Chat Bot</h1>
     <div>
         <input type="text" id="userMessage" placeholder="Напишіть своє повідомлення" />
-        <button onclick="sendMessage()">Відправити</button>
+        <button onclick="sendMessage()">Send</button>
     </div>
     <div id="botResponse"></div>
 </body>
