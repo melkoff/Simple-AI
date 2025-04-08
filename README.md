@@ -1,4 +1,4 @@
-You can run the gpt2 chat model here, it only works as a training and test environment
+You can run the gpt2 chat model here, it only works as a training and test environment, so chat give you random answer
 
 To run it locally, you need to install it:
 
